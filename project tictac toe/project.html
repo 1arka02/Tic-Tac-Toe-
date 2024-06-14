@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="board.css">
+    <link rel="stylesheet" href="title.css">
+
+</head>
+
+<body>
+    <div class="title">
+        <div class="logo">
+           <img src="https://imgs.search.brave.com/gUbxItIDvZKoSsJQhInL0vsPHT2Tp_pI_w09PAzepIc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC90aWMtdGFj/LXRvZS1pY29uLTI1/NngyNTYtNGt0NWFq/c2QucG5n" alt="">
+        </div>
+        <div class="head">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        
+        <div class="info">
+            <div class="sign"><button>Sign in</button> </div>
+            <div class="know"><button>Log in</button> </div>
+            <div class="bell">
+                <img src="https://imgs.search.brave.com/LmiVO8iYNKeEXdnr_u_le0bOk0xtvejxkn6vphdj7gQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9iZWxsLWlj/b24tNDE0eDUxMi10/eGZrdzZsdC5wbmc" alt="">
+                <p class="noto">1</p>
+                <p class="noti">Notifications</p>
+            </div> 
+            <div class="settings">
+                <img src="https://imgs.search.brave.com/xlqxOhaTq3ifSuDKvw7_e-Omy5gFCpCnBvw9twtUFkQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni82MDQ3LzYwNDc4/MDYucG5nP3NlbXQ9/YWlzX2h5YnJpZA" alt="">
+                <p class="set">Settings</p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="whole">
+        <div id="game-play">
+            <div id="game">
+                <h2 id="turn-indicator">Player X's turn</h2>
+                <div id="grid"></div>
+            </div>
+            <div id="buttons">
+                <button id="reset-btn">Reset Game</button>
+                <br>
+                <button id="reset-scores-btn">Reset Scores</button>
+            </div>
+        </div>
+
+
+        <div class="Solo">
+            <input type="checkbox" id="solo-mode"> Play with Computer
+        </div>
+
+
+        <!-- Leaderboard -->
+        <div id="leaderboard">
+            <h3>Leaderboard</h3>
+            <p id="player1-score" class="player">Player 1: 0</p>
+            <p id="player2-score" class="player">Player 2: 0</p>
+        </div>
+
+        <!-- Name Change -->
+        <div id="name-change">
+            <label for="player1-name">Player 1 Name: </label>
+            <input type="text" id="player1-name" placeholder="Player 1">
+            <label for="player2-name">Player 2 Name: </label>
+            <input type="text" id="player2-name" placeholder="Player 2">
+            <button id="change-names-btn">Change Names</button>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p>Current game will reset. Do you want to proceed?</p>
+                <button id="confirm-reset">Yes</button>
+                <button id="cancel-reset">No</button>
+            </div>
+        </div>
+        <!-- <div class="svg-container">
+            <svg viewBox="0 0 120 120">
+                <line class="line" x1="40" y1="0" x2="40" y2="120"></line>
+                <line class="line" x1="80" y1="0" x2="80" y2="120"></line>
+                <line class="line" x1="0" y1="40" x2="120" y2="40"></line>
+                <line class="line" x1="0" y1="80" x2="120" y2="80"></line>
+            </svg>
+        </div> -->
+        <!-- Size Selector -->
+        <div id="size-selector">
+            <label for="board-size">Select board size: </label>
+            <select id="board-size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+        </div>
+    </div>
+
+
+    <script src="board.js"></script>
+</body>
+
+</html>

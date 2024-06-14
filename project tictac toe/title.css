@@ -1,0 +1,95 @@
+.title{
+    background-color:black;
+    opacity: 0.7;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+}
+
+.title h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2em;
+}
+.title h2{
+    color:white;
+    font-size: 15px;
+}
+.head{
+    display: flex;
+}
+.logo img{
+    height: 40px;
+    margin-left: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sign{
+    margin-right: 40px;
+}
+.info img{
+    height: 40px;
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 20px;
+} 
+.info img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.bell,.settings{
+    position: relative;
+}
+.noto{
+    color: white;
+    background-color: red;
+    width: 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: -10px;
+    right: 12px;
+}
+.noti{
+    background-color: rgb(82, 82, 82);
+    color: white;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    margin-left: 10px;
+    top:40px;
+    border: none;
+    opacity:0;
+    border-radius: 5px;
+    padding:4px;
+}
+
+.bell:hover .noti{
+    opacity:1;
+}
+.set{
+    background-color: rgb(82, 82, 82);
+    color: white;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    margin-left:21px;
+    top:40px;
+    border: none;
+    opacity:0;
+    border-radius: 5px;
+    padding: 4px;
+}
+.settings:hover .set{
+    opacity:1;
+}

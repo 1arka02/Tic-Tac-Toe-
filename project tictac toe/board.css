@@ -1,0 +1,185 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: rgb(27, 40, 55);
+    background-size: cover;
+    margin: 0;
+    /* color: #333; */
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+.whole{
+    top: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(12, 20, 29);
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(254, 254, 254); 
+}
+
+
+/* main {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(245, 236, 236);
+} */
+
+#grid {
+    display: grid;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+#grid div {
+    width: 60px;
+    height: 60px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#game{
+    justify-content: center;
+    margin-right: 80px;
+}
+#reset-btn, #reset-scores-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+}
+#grid div:hover {
+    background-color: #e0e0e0;
+}
+
+#controls, #leaderboard, #name-change, #size-selector {
+    margin-top: 40px;
+    align-items: center;
+}
+#name-change input{
+    box-shadow: 0 4px 4px;
+}
+button {
+    background-color: rgb(24, 188, 156);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 24px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#size-selector label {
+    margin-right: 10px;
+    color: white;
+}
+
+#size-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.player {
+    font-weight: normal;
+}
+
+.leading {
+    font-weight: bold;
+    color: green;
+}
+#leaderboard{
+    width:300px;
+    text-align: center;
+    background-color: rgb(254, 254, 255);
+    box-shadow: 0 4px 8px rgb(254, 253, 253);
+    transition: translate 0.5s;
+}
+#leaderboard:hover{
+    translate: 0 -2px;
+}
+#turn-indicator{
+    
+    text-align: center;
+    color: red;
+}
+.Solo{
+    margin-top: 20px;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+#game-play{
+    display: flex;
+    flex-direction: row;
+}
+#buttons{
+    justify-content: center;
+    margin-top: 80px;
+}
+#name-change label{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+}
+#name-change input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px white;
+}
