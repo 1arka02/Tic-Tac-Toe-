@@ -19,7 +19,7 @@
     }
     .title h2{
         color:white;
-        font-size: 15px;
+        font-size: 1rem;
     }
     .head{
         display: flex;
@@ -95,10 +95,38 @@
         opacity:1;
     }
     }
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         .title button{
             height: 50px;
-            margin-left: 20px;
+        }
+        .title h1{
+            font-size: 20px;
+        }
+        .info img{
+            margin-left: 10px;
             margin-right: 10px;
+        }
+        .info button{
+            margin-left: 0px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        .sign{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        .know{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        .head{
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            align-content: center;
+            align-items: center;
         }
     }
