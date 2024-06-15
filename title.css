@@ -129,4 +129,10 @@
             align-content: center;
             align-items: center;
         }
+        .noti{
+            margin-left: -15px;
+        }
+        .set{
+            margin-left: -10px;
+        }
     }
